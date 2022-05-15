@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <title>Cypress - Testing the Tester</title>
+
+  <script>/*<![CDATA[*/  
+    function foo() {
+      return "bar";
+    }
+  /*]]>*/</script>  
+
+  <script type="module">/*<![CDATA[*/  
+    function foo() {
+      return "bar";
+    }
+
+    function outputMessage(message) {
+      document.querySelector("output").innerHTML += message + "<br />";
+    }
+
+    window.addEventListener("pageshow", function(){
+      outputMessage(foo());
+    });
+
+  /*]]>*/</script>
+
+</head>
+<body>
+  <h1>Cypress - Testing the Tester</h1>
+  <output></output>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "testers",
+  "version": "1.0.1",
+  "description": "A demo application for testing web testing frameworks like jest, cypress, etc.",
+  "main": "index.html",
+  "scripts": {
+    "start": "@powershell ./test.ps1",
+    "test": "npx cypress open"
+  },
+  "author": "John Bentley",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.6.1",
+    "lorem-ipsum": "^2.0.4"
+  }
+}

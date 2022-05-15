@@ -1,0 +1,76 @@
+/*
+    Version: 0.9
+    Version Date: 12 Oct 2005 16:43
+    By: John Bentley
+
+    Remarks: For use by Libraries and Examples.
+*/
+
+
+body { margin: 2em 5em;  padding: 0; }
+body, td, th {   }
+p { font-family: verdana, trebuchet ms, sans-serif; font-size: 100%; }
+
+h1, h2, h3 { color: #666699; }
+h2, h3 { padding-top: 2em; }
+h1 { font-size: 150%; }
+h2 { font-size: 125%; }
+h3 { font-size: 110%; color: #696969; }
+
+a:hover { color: green; }
+
+table { font-size: x-small; border-collapse: collapse; width: 100%; }
+caption { font-size: small; padding: 0 0 1em 0; text-align: left; font-family: "Trebuchet MS"; }
+thead { background-color: lightgrey; }
+td, th { padding-left: 5mm; }
+th { border: #696969 1px solid; text-align: left; }
+td { border: lightgrey 1px solid; }
+
+fieldset { padding-left: 1em; margin-top: 2em; }
+label { margin-right: 1em; }
+
+pre { font-size: small; background-color: #eeeeee; border: 1px solid gray; padding: 1em 1em; }
+dt { margin-top: 0.5em; }
+img { border: 1px solid gray; margin-bottom: 2em; }
+img.left { float: left; margin-right: 1em; }
+img.right { float: right; margin-left: 1em; }
+
+form textarea {
+  width: 70%;
+  height: 5em;
+}
+
+form div {
+  margin-bottom: 0.5em;
+}
+
+form div label {
+  vertical-align: top;
+}
+
+.buttonClass { border: #cc99cc 2px outset; background-color: #cc99cc; }
+.browserTable { width: 350px; }
+.browserTable thead { background-color: white; }
+.formValue { color: darkred; }
+.line { margin: 0.5em 0; height: 2em; }
+.field { position: absolute; left: 200px; }
+.notes { margin-left: 1em; font: 1em 'Bookman Old Style'; }
+.mandatory { color: blue; }
+
+    @media print  {
+      .help  {
+        display: none;
+      }
+      h2#senateBallot {
+        break-before: page;
+      }
+    }
+
+    @media screen {
+      [class*="help"] {
+        display: none;
+      }
+      [class*="electorate"] h2:nth-child(5) {
+        break-before: page;
+      }
+    }    

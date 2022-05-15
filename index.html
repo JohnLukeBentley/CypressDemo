@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="icon" href="favicon-32x32.png" />
+
+  <!-- Make page mobile friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cypress - Testing the Tester</title>
+
+  <link rel="stylesheet" href="library.css" />
+
+  <script src="./script/stuff.js"></script>
+
+  <script>/*<![CDATA[*/
+    function foo() {
+      return "bar";
+    }
+  /*]]>*/</script>    
+
+  <script type="module">/*<![CDATA[*/
+    import * as Maths from "./script/maths.js";
+
+    function outputMessage(message) {
+      document.querySelector("output").innerHTML += message + "<br />";
+    }
+
+    function main () {
+      outputMessage("Something: " + Maths.sum(2, 3));
+      outputMessage("Something: " + foo());
+    }
+
+    window.addEventListener("pageshow", function(){
+      main();
+    });
+
+  /*]]>*/</script>
+
+</head>
+<body>
+  <h1>Cypress - Testing the Tester</h1>
+  <p>Lorem Nice</p>
+  <output></output>
+
+  <form method="post" action="" onsubmit="return false;">
+
+    <section>
+      <h2>Input element of various types</h2>
+
+      <fieldset>
+        <legend>Textish</legend>
+
+        <div>
+          <label>First Name</label>
+          <input name="FirstName" id="FirstName" />
+        </div>
+        <div>
+          <label>Family Name</label> <input type="text" name="FamilyName" id="FamilyName" />
+        </div>
+        <div>
+          <label>Delivery instructions</label>
+          <textarea name="DeliveryInstructions" id="DeliveryInstructions"></textarea>
+        </div>
+        
+      </fieldset>
+
+        <p class="buttonGroup">
+          <input type="submit" />
+          <input type="reset" />
+        </p>
+
+      </fieldset>
+    </section>
+
+  </form>
+
+</body>
+</html>
+
