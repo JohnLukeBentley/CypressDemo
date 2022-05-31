@@ -10,7 +10,7 @@
   "author": "John Bentley",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.6.1",
+    "cypress": "^9.7.0",
     "lorem-ipsum": "^2.0.4"
   }
 }
