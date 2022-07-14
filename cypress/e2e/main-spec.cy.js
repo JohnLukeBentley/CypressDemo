@@ -11,7 +11,7 @@ const lorem = new LoremIpsum({
     min: 4
   }
 });
-describe('The Home Page Tests', () => {
+describe('Main - Page Tests', () => {
   // Running initializing shared code before each it test.
   before(()=> {
     // Assumes, e.g. "baseUrl": "http://127.0.0.1:5500" set in cypress.json
@@ -50,7 +50,7 @@ describe('The Home Page Tests', () => {
   });
 });
 
-describe('JavaScript Unit Testing', ()=> {
+describe('Main - JavaScript Unit Testing', ()=> {
   before(()=> {
     // Assumes, e.g. "baseUrl": "http://127.0.0.1:5500" set in cypress.json
     cy.visit('index.html'); 

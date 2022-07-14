@@ -10,11 +10,11 @@
   "author": "John Bentley",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.2.0",
+    "cypress": "^10.3.0",
     "lorem-ipsum": "^2.0.8"
   },
   "dependencies": {
-    "npm-check-updates": "^14.0.1",
+    "npm-check-updates": "^15.3.0",
     "npx": "^10.2.2"
   }
 }
